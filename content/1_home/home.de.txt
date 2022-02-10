@@ -1,9 +1,0 @@
-Headertext: <p>Header Home Text DE</p>
-
-----
-
-Meta-description: 
-
-----
-
-Meta-keywords: 

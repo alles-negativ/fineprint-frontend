@@ -1,9 +1,0 @@
-title: Site
-preset: page
-unlisted: true
-
-# deploy button
-fields:
-  deploy:
-    type: webhook
-    label: Deploy on Netlify
