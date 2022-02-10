@@ -1,0 +1,27 @@
+Headertitle: Header Subpage Titel DE
+
+----
+
+Headertext: <p>Header Subpage Text DE</p>
+
+----
+
+Headerimage:
+
+- 1280x1920px.png
+
+----
+
+Contenttitle: Titel Fliesstext DE
+
+----
+
+Contenttext: <p>Inhalt Fliesstext DE</p>
+
+----
+
+Meta-description: 
+
+----
+
+Meta-keywords: 

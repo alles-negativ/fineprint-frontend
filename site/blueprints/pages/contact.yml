@@ -1,0 +1,50 @@
+title: Kontakt
+
+tabs:
+  Inhalt:
+    columns:
+      center:
+        width: 3/3
+        fields:
+          headerSettings:
+            label: Header
+            type: headline
+            numbered: false
+      left:
+        width: 2/3
+        fields:
+          headertitle:
+            label: Header Title
+            type: text
+            size: small
+            required: true
+          headertext:
+            label: Header Text
+            type: writer
+            required: true
+            marks:
+              - link
+      right:
+        width: 1/3
+        fields:
+          headeremail:
+            label: E-Mail
+            type: text
+            required: true
+          headertel:
+            label: Telefon
+            type: text
+            required: true
+          headeropening:
+            label: Öffnungszeiten
+            type: text
+            required: true
+      center2:
+        width: 3/3
+        fields:      
+          line-a:
+            type: line                     
+  Meta:         
+    fields:
+      seo: fields/seo           
+

@@ -1,0 +1,80 @@
+title: Angebote
+
+tabs:
+  Inhalt:
+    columns:
+      center:
+        width: 3/3
+        fields:
+          headerSettings:
+            label: Header
+            type: headline
+            numbered: false
+      left:
+        width: 2/3
+        fields:
+          headertitle:
+            label: Header Titel
+            type: text
+            size: small
+            required: true
+          headertext:
+            label: Header Text
+            type: writer
+            required: true
+            marks:
+              - link
+      right:
+        width: 1/3
+        fields:           
+          headerimage:
+            label: Header Bild
+            type: files
+      center2:
+        width: 3/3
+        fields:      
+          line-a:
+            type: line
+
+      center3:
+        width: 3/3
+        fields:
+          pageSettings:
+            label: Inhalt
+            type: headline
+            numbered: false 
+      left2:
+        width: 2/3
+        sections:
+          content:
+            type: fields
+            fields:
+              contenttitle:
+                label: Titel Fliesstext
+                type: text
+                size: small
+                required: true
+              contenttext:
+                label: Fliesstext
+                type: writer
+                required: true
+                marks:
+                  - link
+      right2:
+        width: 1/3
+        sections:          
+          drafts:
+            extends: sections/subpagepost
+            headline: Accordion/Angebot - Entwurf
+            status: draft
+          unlisted:
+            extends: sections/subpagepost
+            headline: Accordion/Angebot - Nicht angezeigt
+            status: unlisted
+          listed:
+            extends: sections/subpagepost
+            headline: Accordion/Angebot - Publiziert
+            status: listed
+  Meta:         
+    fields:
+      seo: fields/seo              

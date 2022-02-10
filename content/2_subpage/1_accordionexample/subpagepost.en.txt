@@ -1,0 +1,15 @@
+Title: AccordionExample
+
+----
+
+Introtext: <p>Accordion Example</p>
+
+----
+
+Contenttext: <p>Accordion Example Text</p>
+
+----
+
+Contentimage:
+
+- 1200x800px.png

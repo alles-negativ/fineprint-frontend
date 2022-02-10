@@ -1,0 +1,27 @@
+title: Angebotepost
+
+columns:
+  left:
+    width: 2/3
+    fields:
+      introtext:
+        label: Intro Text
+        type: writer
+        required: true
+        marks:
+          - link
+      contenttext:
+        label: Inhalt Text
+        type: writer
+        required: true
+        marks:
+          - link  
+    
+  right:
+    width: 1/3
+    fields:
+      contentimage:
+        label: Bild
+        type: files
+            
+

@@ -1,0 +1,25 @@
+Headertitle: Header Titel Kontakt DE
+
+----
+
+Headertext: <p>Header Text Kontakt DE</p>
+
+----
+
+Headeremail: hello@alles-negativ-fake.ch
+
+----
+
+Headertel: 0457863513
+
+----
+
+Headeropening: 9:30 - 17:00
+
+----
+
+Meta-description: 
+
+----
+
+Meta-keywords: 
