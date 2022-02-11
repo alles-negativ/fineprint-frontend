@@ -3,52 +3,53 @@
 @use "assets/css/main/main" as *;
 
 footer {
-  margin-top: $marginLarge;
-
-  @include tablet {
-        margin-top: $marginXLarge;
-    }
-
-    @include desktop {
-        margin-top: $marginXXLarge;
-    }
-
-    @include desktopXL {
-        margin-top: $marginXXLarge;
-    }
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 a { 
   color: $white;
 }
 
+.line {
+  height: 4px;
+  background-color: $accent;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.title  {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
 .container {
+  width: 550px;
   display: flex;
   flex-flow: wrap;
   flex-direction: column;
   height: auto;
-  color: $white;
-  background-color: $black;
+  color: $black;
+  background-color: $white;
   justify-content: center;
-  border-radius: 20px 20px 0px 0px;
   bottom: 0;
+  position: relative;
+  margin: auto;
 
     @include tablet {
         flex-wrap: wrap;
-        padding-top: $contentpaddingLarge;
-        border-radius: 40px 40px 0px 0px;
     }
 
     @include desktop {
         flex-flow: column wrap;
-        padding-top: $contentpaddingLarge;
-        border-radius: 40px 40px 0px 0px;
     }
 
     @include desktopXL {
         flex-flow: column wrap;
-        padding-top: $contentpaddingLarge;
-        border-radius: 40px 40px 0px 0px;
     }
 
   &__top {
@@ -73,29 +74,15 @@ a {
 
 .contact {
   display: flex;
-  width: 70%;
+  width: 100%;
   height: auto;
   flex-flow: column wrap;
   flex-direction: column;
-  padding: $contentpadding;
 
-    @include tablet {
-        width: 30%;
-        padding-left: $contentpaddingLarge;
-    }
-
-    @include desktop {
-        width: 50%;
-        padding-left: $contentpaddingLarge;
-    }
-
-    @include desktopXL {
-        width: 50%;
-        padding-left: $contentpaddingLarge;
-    }
-
-  .text__small {
-    margin-bottom: 0.5em;
+  p {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
   }
 }
 
@@ -155,84 +142,4 @@ a {
     @include desktopXL {
         width: 100%;
     }
-}
-
-.standorte {
-  display: grid;
-  width: 100%;
-  height: auto;
-  grid-template-columns: repeat(2, 1fr);
-  padding: $contentpadding;
-
-    @include tablet {
-        width: 70%;
-    }
-
-    @include desktop {
-        width: 50%;
-    }
-
-    @include desktopXL {
-        width: 50%;
-    }
-  
-  &__item {
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 0.5em;
-  }
-}
-
-.parking_lot {
-  display: flex;
-  justify-content: center;
-
-  @include mobileXS {
-      width: 100%;
-  }
-
-  @include tablet {
-      width: 100%;
-  }
-
-  @include desktop {
-      width: 100%;
-  }
-
-  @include desktopXL {
-      width: 100%;
-  }
-}
-
-.parking_space {
-  display: block;
-  background-color: $white;
-  border-radius: 200px;
-  width: 365px;
-  height: 50px;
-  margin-bottom: 34px;
-  align-self: center;
-
-  @include mobileXS {
-        align-self: center;
-        height: 50px;
-        width: 320px;
-  }
-
-  @include tablet {
-        align-self: center;
-        width: 366px;
-  }
-
-  @include desktop {
-      align-self: center;
-      width: 366px;
-  }
-
-  @include desktopXL {
-      align-self: center;
-      width: 366px;
-  }
 }

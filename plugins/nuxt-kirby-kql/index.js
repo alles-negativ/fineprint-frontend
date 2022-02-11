@@ -35,11 +35,13 @@ export default function ({
         status,
         statusText
       } = response
-      return {
-        json: (jsonResponse.result.data) ? jsonResponse.result.data:jsonResponse.result,
-        ok,
-        status,
-        statusText
+      if (jsonResponse != undefined) {
+        return {
+          json: jsonResponse.result.data ? jsonResponse.result.data : jsonResponse.result,
+          ok,
+          status,
+          statusText
+        }
       }
     }
     function getErrorResponse (error) {

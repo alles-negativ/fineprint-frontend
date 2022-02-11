@@ -5,8 +5,8 @@ Global definitions for overreaching elements
 @use "breakpoints" as *;
 @use "colors" as *;
 
-$contentpadding: 0.75em;
-$contentpaddingLarge: 3em;
+$contentpadding: 2em;
+$contentpaddingLarge: 7em;
 
 $margin: 5em;
 $marginLarge: 7.5em;
@@ -23,7 +23,6 @@ body {
 }
 
 .wrapper {
-   margin-bottom: 10em;
    padding-left: $contentpadding;
    padding-right: $contentpadding;
 

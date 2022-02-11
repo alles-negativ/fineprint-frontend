@@ -4,23 +4,19 @@
 
 .header__wrapper {
     width: 100%;
-    margin-bottom: $marginHeaderMedium;
+    // position: fixed;
+}
 
-        @include tablet {
-            margin-bottom: $marginHeader;
-        }
-
-        @include desktop {
-            margin-bottom: $marginHeaderLarge;
-        }
-
-        @include desktopXL {
-            margin-bottom: $marginHeaderXLarge;
-        }
+.line {
+    height: 7px;
+    width: 100%;
+    background-color: $accent;
 }
 
 .header {
+    position: relative;
     height: auto;
+    padding: 25px 40px 0 40px;
 
         @include tablet {
             height: auto;
@@ -34,38 +30,24 @@
             height: auto;    
         }
 
-    &__links {
-        display: flex;
-        justify-content: space-between;
-        background-color: $white;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 50px;
-        padding: $contentpadding;
+    // &__links {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     background-color: $white;
+    //     align-items: center;
+    //     width: 100%;
 
-            @include tablet {
-                padding: $contentpaddingLarge;
-                margin-bottom: 0px;
-            }
+    //     &--utility {
+    //         display: block;
+    //         position: absolute;
+    //         right: 0;
+    //         top: 0px;
+    //     }
 
-            @include desktop {
-                padding: $contentpaddingLarge;
-            }
-
-            @include desktopXL {
-                padding: $contentpaddingLarge;
-            }
-
-        &--utility {
-            display: flex;
-            flex-flow: row nowrap;
-        }
-
-        &--logo {
-            width: auto;
-        }
-    }
+    //     &--logo {
+    //         width: auto;
+    //     }
+    // }
 
     &__content {
         display: flex;

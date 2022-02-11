@@ -37,7 +37,7 @@ export default {
             "select": {
                 "headertext": true,
             }
-        }, this.$nuxt.context.app.i18n.locale)
+        }, 'de')
         this.error = data
     }, 
 }

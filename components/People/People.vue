@@ -4,12 +4,11 @@
         <ul class="container__columns">
             <li v-for="article in articles" :key="article.id" class="content">
                 <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
-                <div class="teaser__box">
-                    <div class="text" v-html="article.title"></div>
-                    <h3>{{ article.contenttitle }}</h3>
-                    <div class="text" v-html="article.contenttext"></div>
+                <div class="box">
+                    <h3>{{ article.title }}</h3>
+                    <p>{{ article.email }}</p>
+                    <p>{{ article.phone }}</p>
                 </div>
-                <div class="subtext" v-html="article.subtext"></div>
             </li>
         </ul>
     </div>
@@ -17,7 +16,7 @@
 
 <script>
 export default {
-    name: 'Articles',
+    name: 'People',
 
     data() {
         return {
@@ -26,13 +25,11 @@ export default {
     },
     async fetch() {
         const { json: data } = await this.$kirby.find({
-            "query": "page('home').children",
+            "query": "page('team').children",
             "select": {
                 "title": true,
-                "date": true,
-                "contenttitle": true,
-                "contenttext": true,
-                "subtext": true,
+                "email": true,
+                "phone": true,
                 "contentimage": true,
                 "images": {
                     "query": 'page.files',
@@ -50,5 +47,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @use "Articles";
+    @use "People";
 </style>

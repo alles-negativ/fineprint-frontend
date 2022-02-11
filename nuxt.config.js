@@ -72,6 +72,7 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  layouts: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -83,46 +84,46 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/i18n',
+    // '@nuxtjs/i18n',
     '@nuxtjs/moment'
   ],
 
   // Translation configuration
-  i18n: {
-    strategy: 'prefix',
-    locales: [
-      {
-         code: 'de',
-         name: 'Deutsch'
-      },
-      {
-         code: 'en',
-         name: 'English'
-      }
-    ],
-    defaultLocale: 'de',
-    vueI18n: {
-      fallbackLocale: 'de',
-      messages: {
-        de: {
-          locations: 'Standorte',
-          contact: 'Kontakt',
-          open: 'Öffnungszeiten',
-          accept: 'Oke! 👍',
-          readmore: 'mehr',
-          cookie: 'Diese Website verwendet Cookies',
-        },
-        en: {
-          locations: 'Locations',
-          contact: 'Contact',
-          open: 'Opening Hours',
-          accept: 'Oke! 👍',
-          readmore: 'read more',
-          cookie: 'This website uses cookies',
-        }
-      }
-    },
-  },
+  // i18n: {
+  //   strategy: 'prefix',
+  //   locales: [
+  //     {
+  //        code: 'de',
+  //        name: 'Deutsch'
+  //     },
+  //     {
+  //        code: 'en',
+  //        name: 'English'
+  //     }
+  //   ],
+  //   defaultLocale: 'de',
+  //   vueI18n: {
+  //     fallbackLocale: 'de',
+  //     messages: {
+  //       de: {
+  //         locations: 'Standorte',
+  //         contact: 'Kontakt',
+  //         open: 'Öffnungszeiten',
+  //         accept: 'Oke! 👍',
+  //         readmore: 'mehr',
+  //         cookie: 'Diese Website verwendet Cookies',
+  //       },
+  //       en: {
+  //         locations: 'Locations',
+  //         contact: 'Contact',
+  //         open: 'Opening Hours',
+  //         accept: 'Oke! 👍',
+  //         readmore: 'read more',
+  //         cookie: 'This website uses cookies',
+  //       }
+  //     }
+  //   },
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

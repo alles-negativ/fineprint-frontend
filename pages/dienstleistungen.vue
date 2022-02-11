@@ -17,8 +17,8 @@ export default {
   
   async asyncData({ app, $kirby }) {
     const { json: page } = await $kirby.find({
-      "query": "page('subpage')"
-    }, app.i18n.locale)
+      "query": "page('dienstleistungen')"
+    }, 'de')
     return { page }
   } 
 }

@@ -1,18 +1,20 @@
 <template>
-  <main>
-      <Articles />
-  </main>
+  <div> 
+    <Map />
+  </div>
 </template>
 
 <script>
 import metaTags from "../mixins/metaTags";
 
 export default {
-mixins: [metaTags],
+  layout: 'nofooter',
 
+  mixins: [metaTags],
+  
   async asyncData({ app, $kirby }) {
     const { json: page } = await $kirby.find({
-      "query": "page('home')"
+      "query": "page('kontakt')"
     }, 'de')
     return { page }
   }

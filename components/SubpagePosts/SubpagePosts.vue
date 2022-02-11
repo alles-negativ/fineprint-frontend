@@ -28,7 +28,7 @@ export default {
     },
     async fetch() {
         const { json: data } = await this.$kirby.find({
-            "query": "page('subpage').children",
+            "query": "page('dienstleistungen').children",
             "select": {
                 "title": true,
                 "introtext": true,
@@ -43,7 +43,7 @@ export default {
                     }
                 }
             }
-        }, this.$nuxt.context.app.i18n.locale)
+        }, 'de')
         this.data = data
     },
 }

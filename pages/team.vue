@@ -1,6 +1,6 @@
 <template>
-  <main>
-      <Articles />
+  <main id="content">
+    <People />
   </main>
 </template>
 
@@ -8,13 +8,13 @@
 import metaTags from "../mixins/metaTags";
 
 export default {
-mixins: [metaTags],
-
+  mixins: [metaTags],
+  
   async asyncData({ app, $kirby }) {
     const { json: page } = await $kirby.find({
-      "query": "page('home')"
+      "query": "page('team')"
     }, 'de')
     return { page }
-  }
+  } 
 }
 </script>
