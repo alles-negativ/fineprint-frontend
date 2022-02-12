@@ -1,7 +1,17 @@
 <template>
     <div v-if="data != null">
-        <h3>{{ data.content.title }}</h3>
-        <div v-html="data.content.contenttext"></div>
+        <div class="container" v-for="element in JSON.parse(data.content.inhalt)" :key="element.id">
+            <div class="textfield" v-if="element.type == 'text'" v-html="element.content.text"></div>
+            <h3 v-if="element.type == 'heading'"> {{ element.content.text }}</h3>
+            <Accordion v-if="element.type == 'accordion'">
+                <template v-slot:title>
+                    <h3 class="title"> {{ element.content.title }} </h3>
+                </template>
+                <template v-slot:body>
+                    <div class="text" slot="contenttext" v-html="element.content.text"></div>
+                </template>
+            </Accordion>
+        </div>
     </div>
 </template>
 
@@ -25,5 +35,11 @@ export default {
 h3 {
   margin-top: 40px;
   margin-bottom: 10px;
+}
+.container {
+
+    .textfield {
+        margin-top: 40px;
+    }
 }
 </style>
