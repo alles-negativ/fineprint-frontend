@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-   padding-left: $contentpadding;
+   padding-left: 5em; //sorry :-)
    padding-right: $contentpadding;
 
     @include tablet {
