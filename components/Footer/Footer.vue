@@ -3,9 +3,13 @@
     <div class="container">
       <div class="line"></div>
       <p class="title">Kontakt</p>
-      <div class="contact">
-        <p>{{ footer.email }}</p>
-        <p>{{ footer.phone }}</p>
+      <div class="contact" v-if="footer != []">
+        <p>
+          <a :href="'mailto:' + footer.email">{{ footer.email }}</a>
+        </p>
+        <p>
+          <a v-if="footer.phone != undefined" :href="'tel:' + footer.phone.replace(/\s+/g, '')">{{ footer.phone }}</a>
+        </p>
       </div>
     </div>
   </footer>

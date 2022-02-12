@@ -1,10 +1,15 @@
 <template>
   <main id="content">
-    <div class="grid">
+    <div class="text_box">
+      <Subnavigation />
       <h1>{{ page.content.contenttitle }}</h1>
       <div v-html="page.content.contenttext"></div>
+      <SubpagePosts />
+      <Footer />
     </div>
-    <SubpagePosts />
+    <div class="image_box">
+
+    </div>
   </main>
 </template>
 
@@ -14,6 +19,8 @@ import metaTags from "../mixins/metaTags";
 
 export default {
   mixins: [metaTags],
+
+  layout: 'nofooter',
   
   async asyncData({ app, $kirby }) {
     const { json: page } = await $kirby.find({
@@ -23,3 +30,13 @@ export default {
   } 
 }
 </script>
+
+<style lang="scss" scoped>
+.text_box {
+  width:40%;
+}
+
+.image_box{
+  width:60%;
+}
+</style>

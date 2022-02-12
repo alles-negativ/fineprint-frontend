@@ -1,9 +1,11 @@
 <template>
-  <div class="header__wrapper">
-    <div class="line">
-    </div>
-    <div class="header">
-      <Navigation />
+  <div class="spacer">
+    <div class="header__wrapper">
+      <div class="line">
+      </div>
+      <div class="header">
+        <Navigation />
+      </div>
     </div>
   </div>
 </template>

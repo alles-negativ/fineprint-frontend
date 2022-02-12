@@ -1,10 +1,11 @@
 <template>
     <div class="content_wrapper">
         <div class="textbox">
-            <a class="text" href="#">
+            <div class="welcome_text" v-html="contact.text"></div>
+            <a v-if="contact.phone != undefined" class="text" :href="'tel:' + contact.phone.replace(/\s+/g, '')">
                 <h3>{{ contact.phone }}</h3>
             </a>
-            <a class="text" href="#">
+            <a class="text" :href="'mailto:' + contact.email">
                 <h3>{{ contact.email }}</h3>
             </a>
             <div class="adress" v-html="contact.adress"></div>

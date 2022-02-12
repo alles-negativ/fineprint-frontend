@@ -2,9 +2,22 @@
 @use "assets/css/main/breakpoints" as *;
 @use "assets/css/main/main" as *;
 
+.spacer {
+    height: 142px;
+
+    @include mobile {
+        height: 127px;
+    }
+}
+
 .header__wrapper {
+    position: fixed;
     width: 100%;
-    // position: fixed;
+    z-index: 999;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,1) 100%);
+    
 }
 
 .line {
@@ -18,17 +31,21 @@
     height: auto;
     padding: 25px 40px 0 40px;
 
-        @include tablet {
-            height: auto;
-        }
+    @include mobile {
+        padding: 10px 20px 0 20px;
+    }
 
-        @include desktop {
-            height: auto;
-        }
+    @include tablet {
+        height: auto;
+    }
 
-        @include desktopXL {
-            height: auto;    
-        }
+    @include desktop {
+        height: auto;
+    }
+
+    @include desktopXL {
+        height: auto;    
+    }
 
     // &__links {
     //     display: flex;

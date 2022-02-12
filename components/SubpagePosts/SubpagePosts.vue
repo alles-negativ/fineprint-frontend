@@ -1,7 +1,7 @@
 <template>
     <div class="accordion__wrapper">
         <div v-for="element in data" :key="element.id">
-            <Accordion>
+            <!-- <Accordion>
              <template v-slot:title>
                 <h3 class="title"> {{ element.title }} </h3>
               </template>
@@ -12,7 +12,7 @@
                     <nuxt-img class="image image__img" :src="element.images[0].url" :alt="element.images[0].alt" />
                 </div>
               </template>
-          </Accordion>
+          </Accordion> -->
         </div>
     </div>
 </template>
@@ -34,14 +34,14 @@ export default {
                 "introtext": true,
                 "contenttext": true,
                 "contentimage": true,
-                "images": {
-                    "query": "page.files",
-                    "select": {
-                        "name": true,
-                        "url": true,
-                        "alt": true
-                    }
-                }
+                // "images": {
+                //     "query": "page.files",
+                //     "select": {
+                //         "name": true,
+                //         "url": true,
+                //         "alt": true
+                //     }
+                // }
             }
         }, 'de')
         this.data = data
