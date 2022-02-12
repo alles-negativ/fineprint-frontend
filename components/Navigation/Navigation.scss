@@ -80,6 +80,12 @@ nav li {
         }
     }
 
+    a.nuxt-link-active  {
+        p {
+            font-weight: bold;
+        }
+    }
+
     // a.nuxt-link-active  {
     //     color: $white;
     //     background-color: $black;

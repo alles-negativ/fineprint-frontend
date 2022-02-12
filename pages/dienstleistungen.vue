@@ -2,13 +2,14 @@
   <main id="content">
     <div class="text_box">
       <Subnavigation />
-      <h1>{{ page.content.contenttitle }}</h1>
-      <div v-html="page.content.contenttext"></div>
-      <SubpagePosts />
+      <!-- <h1>{{ page.content.contenttitle }}</h1>
+      <div v-html="page.content.contenttext"></div> -->
+      <!-- <SubpagePosts /> -->
+      <NuxtChild :key="$route.params.slug" />
       <Footer />
     </div>
     <div class="image_box">
-
+      <SubpagePosts />
     </div>
   </main>
 </template>
@@ -27,11 +28,17 @@ export default {
       "query": "page('dienstleistungen')"
     }, 'de')
     return { page }
-  } 
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+#content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .text_box {
   width:40%;
 }

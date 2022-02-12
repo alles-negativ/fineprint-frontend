@@ -3,3 +3,11 @@
 @use "assets/css/main/main" as *;
 
 
+.gallery_wrapper {
+
+    padding-left: 20px;
+
+    .image {
+        width: 100%;
+    }
+}

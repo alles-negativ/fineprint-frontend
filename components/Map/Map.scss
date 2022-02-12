@@ -8,7 +8,7 @@
     flex-direction: row;
 
     .textbox {
-        width: 33%;
+        width: 40%;
         padding-right: 10px;
 
     }
@@ -28,7 +28,7 @@
     }
 
     .map {
-        width: 66%;
+        width: 60%;
 
         ::v-deep iframe {
             width: 100%;

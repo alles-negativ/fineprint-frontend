@@ -3,7 +3,7 @@
         <!-- <ul v-for="columns in sortedArticles" :key="columns.id" class="container__columns"> -->
         <ul class="container">
             <li v-for="element in data" :key="element.id" class="elements">
-                <nuxt-link :to="'/' + element.slug">
+                <nuxt-link :to="'/dienstleistungen/' + element.slug">
                         <p class="text">{{ element.title }}</p>
                 </nuxt-link>
             </li>
