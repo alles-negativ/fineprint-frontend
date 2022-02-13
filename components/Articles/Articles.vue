@@ -9,7 +9,7 @@
                     <h3>{{ article.contenttitle }}</h3>
                     <div class="text" v-html="article.contenttext"></div>
                 </div>
-                <div class="subtext" v-html="article.subtext"></div>
+                <span class="subtext" v-html="article.subtext"></span>
             </li>
         </ul>
     </div>
