@@ -5,18 +5,6 @@
                 <nuxt-img class="image" :src="element.url" :alt="element.alt" />
             </div>
         </Flickity>
-        <!-- <Accordion>
-            <template v-slot:title>
-            <h3 class="title"> {{ element.title }} </h3>
-            </template>
-            <template v-slot:body>
-            <div class="text__big" slot="introtext" v-html="element.introtext"></div>
-            <div class="text" slot="contenttext" v-html="element.contenttext"></div>
-            <div class="image" slot="image">
-                <nuxt-img class="image image__img" :src="element.images[0].url" :alt="element.images[0].alt" />
-            </div>
-            </template>
-        </Accordion> -->
     </div>
 </template>
 
@@ -28,14 +16,19 @@ export default {
         return {
             data: [],
             flickityOptions: {
+                draggable: false,
                 initialIndex: 0,
                 prevNextButtons: false,
-                pageDots: true,
-                wrapAround: true,
-                autoPlay: 2000,
+                arrowShape: {},
+                pageDots: false,
+                wrapAround: false,
+                autoPlay: 3000,
                 pauseAutoPlayOnHover: false,
-                selectedAttraction: 0.01
-        }
+                fade: true,
+                imagesLoaded: true,
+                selectedAttraction: 0.01,
+                setGallerySize: false,
+            }
         }
     },
     async fetch() {

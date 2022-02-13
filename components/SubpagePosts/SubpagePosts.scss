@@ -5,9 +5,17 @@
 
 .gallery_wrapper {
 
-    padding-left: 20px;
+    // width: 100%;
+    // height: 400px;
+    pointer-events: none;
+
+    ::v-deep.flickity-viewport {
+        height: calc(100vh - 4em - 142px);
+    }
 
     .image {
-        width: 100%;
+        min-width: 100%;
+        max-height: calc(100vh - 4em - 142px);
+        object-fit: cover;
     }
 }
