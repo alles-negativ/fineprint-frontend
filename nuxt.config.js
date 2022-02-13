@@ -73,7 +73,6 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  layouts: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -86,7 +85,9 @@ export default {
   modules: [
     '@nuxtjs/axios',
     // '@nuxtjs/i18n',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'
   ],
 
   // Translation configuration
@@ -144,6 +145,15 @@ export default {
   },
 
   proxy: {
+  },
+
+  sitemap: {
+    hostname: 'https://wwww.fineprintag.ch',
+    gzip: true,
+  },
+
+  robots: {
+    /* module options */
   },
 
   image: {
