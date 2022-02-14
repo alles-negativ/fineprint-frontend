@@ -9,12 +9,7 @@
       <!-- <Footer /> -->
     </div>
     <div class="image_box">
-      <div class="info"> 
-        <h3>Wir beantworten Ihnen gerne alle weiteren Fragen:</h3>
-        <br>
-        <h3>+41 44 388 70 90</h3>
-        <h3>info@fineprintag.ch</h3>
-      </div>
+      <InfoBlock />
       <SubpagePosts />
     </div>
   </main>
