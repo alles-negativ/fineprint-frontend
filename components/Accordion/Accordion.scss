@@ -7,7 +7,7 @@
 
 .accordion {
     width: 100%;
-    border-top: 2px solid $black;
+    border-top: 1px solid $black;
     // border-bottom: 2px solid $black;
     margin-top: 40px;
     // padding-top: $contentpadding;
@@ -23,6 +23,8 @@
     .content .text{
         font-size: 16px;
         margin: 0;
+        border-bottom: 1px solid $black;
+        padding-bottom: 5px;
     }
 
         &__title {
@@ -60,7 +62,5 @@
     &__body {
         overflow: hidden;
         border-top: 0;
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
     }
 }

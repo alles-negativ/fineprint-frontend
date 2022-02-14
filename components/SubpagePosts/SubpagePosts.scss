@@ -11,11 +11,19 @@
 
     ::v-deep.flickity-viewport {
         height: calc(100vh - 4em - 142px);
+
+        @include mobile {
+            height: 400px;
+        }
     }
 
     .image {
         min-width: 100%;
         max-height: calc(100vh - 4em - 142px);
         object-fit: cover;
+
+        @include mobile {
+            max-height: 400px;
+        }
     }
 }

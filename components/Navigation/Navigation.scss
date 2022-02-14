@@ -35,6 +35,19 @@ nav {
     }
 }
 
+@include mobile {
+    .home {
+        .logo {
+            height: 62px;
+            width: 0px;
+    
+            p {
+                line-height: 42px;
+            }
+        }
+    }
+}
+
 .logo { 
     position: relative;
     height: 165px;

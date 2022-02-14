@@ -1,8 +1,7 @@
 <template>
-  <div class="spacer">
+  <div :class="{ 'home': $route.name === 'index' }" class="spacer">
     <div class="header__wrapper">
-      <div class="line">
-      </div>
+      <div class="line"></div>
       <div class="header">
         <Navigation />
       </div>
