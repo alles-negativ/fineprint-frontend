@@ -40,6 +40,7 @@ h3 {
 
     .textfield {
         margin-top: 40px;
+        line-height: 26px;
     }
 }
 </style>

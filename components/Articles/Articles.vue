@@ -5,9 +5,9 @@
             <li v-for="article in articles" :key="article.id" class="content">
                 <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
                 <div class="teaser__box">
-                    <div class="text" v-html="article.title"></div>
+                    <div class="text__small" v-html="article.title"></div>
                     <h3>{{ article.contenttitle }}</h3>
-                    <div class="text" v-html="article.contenttext"></div>
+                    <div class="text__small" v-html="article.contenttext"></div>
                 </div>
                 <span v-if="article.subtext != ''" class="subtext" v-html="article.subtext"></span>
             </li>

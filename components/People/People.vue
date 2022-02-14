@@ -6,9 +6,9 @@
                 <div class="sticky">
                     <nuxt-img :src="article.images[0].url" :alt="article.images[0].alt" />
                     <div class="box">
-                        <h3>{{ article.title }}</h3>
-                        <p>{{ article.email }}</p>
-                        <p>{{ article.phone }}</p>
+                        <h2>{{ article.title }}</h2>
+                        <p class="text__medium">{{ article.email }}</p>
+                        <p class="text__medium">{{ article.phone }}</p>
                     </div>
                 </div>
             </li>

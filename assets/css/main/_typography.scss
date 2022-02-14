@@ -28,7 +28,7 @@ h2 {
     font-family: AvenirNext, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h3 {
@@ -38,7 +38,7 @@ h3 {
     font-size: 30px;
 
     @include tablet {
-        font-size: 35px;
+            font-size: 35px;
     }
 
     @include desktop {
@@ -53,7 +53,6 @@ h3 {
 p, button {
     font-family: AvenirNext, sans-serif;
     font-style: normal;
-    line-height: 26px;
 }
 
 .text {
@@ -115,13 +114,38 @@ p, button {
     }     
 
     &__medium {
-        font-size: 18px;
-        line-height: 20px;
+        margin-bottom: 0px;
+        font-size:calc(14px + 0.2vw);
+        line-height: 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        @include tablet {
+            font-size:calc(13px + 0.2vw);
+        }
     }
 
     &__small {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 18px;
+        font-family: AvenirNext, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    
+        @include desktop {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    
+        @include desktopXL {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
 
     &__footer {
@@ -133,7 +157,7 @@ p, button {
     &__menu {
         font-weight: 500;
         font-size: 15px;
-        line-height: auto;
+        line-height: 30px;
         text-transform: capitalize;
     }
 
