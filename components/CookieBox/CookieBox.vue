@@ -11,7 +11,7 @@
       </template>
       <template slot="button">
         <div class="accept__button">
-          <p class="accept__text">Oke! 👍</p>
+          <p class="accept__text">Oke!</p>
         </div>
       </template>
     </cookie-consent>
