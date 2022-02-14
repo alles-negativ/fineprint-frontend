@@ -9,12 +9,7 @@
       <!-- <Footer /> -->
     </div>
     <div class="image_box">
-      <div class="info"> 
-        <h3>Wir beantworten Ihnen gerne alle weiteren Fragen:</h3>
-        <br>
-        <h3>+41 44 388 70 90</h3>
-        <h3>info@fineprintag.ch</h3>
-      </div>
+      <InfoBlock />
       <SubpagePosts />
     </div>
   </main>
@@ -78,30 +73,6 @@ export default {
     margin-left: 0;
     width: calc(100%);
     margin: 40px 0;
-  }
-}
-
-.info {
-  background: rgba(0, 80, 236, 0.8);
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  z-index: 100;
-  color: white;
-  padding: 40px;
-  max-width: 400px;
-  
-  h3 {
-    font-size: 23px;
-  }
-
-  @include mobile {
-    position: relative;
-    width: 80%;
-    bottom: unset;
-    left: unset;
-    margin: 0 auto;
-    margin-bottom: -100px;
   }
 }
 </style>

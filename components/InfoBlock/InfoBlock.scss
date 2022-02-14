@@ -1,0 +1,41 @@
+@use "assets/css/main/colors" as *;
+@use "assets/css/main/breakpoints" as *;
+@use "assets/css/main/main" as *;
+
+.info {
+  background: $accent;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+  color: $white;
+  padding: 40px;
+  max-width: 400px;
+  
+  h3 {
+    font-size: 23px;
+    line-height: 30px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        color: $black;
+        // font-style: italic;
+        // text-decoration: underline;
+        // padding-left: 10px;
+      }
+
+    }
+  }
+
+  @include mobile {
+    position: relative;
+    width: 80%;
+    bottom: unset;
+    left: unset;
+    margin: 0 auto;
+    margin-bottom: -100px;
+  }
+}
