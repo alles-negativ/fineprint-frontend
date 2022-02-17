@@ -159,7 +159,7 @@ export default {
   image: {
     domains: [
       'http://localhost:8888',
-      'http://backend.fineprintag.ch/'
+      'https://backend.fineprintag.ch/'
     ]
   }
 }
