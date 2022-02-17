@@ -17,6 +17,12 @@
 
 <script>
 export default {
+
+    transition: {
+        name: 'page',
+        mode: 'out-in'
+    },
+    
     data() {
         return {
             data: null,
@@ -43,4 +49,33 @@ h3 {
         line-height: 26px;
     }
 }
+
+  /* during entering and leaving : */
+  .page-enter-active {
+    transition: all 0.3s ease;
+  }
+
+  .page-leave-active {
+    transition: all 0.1s ease;
+  }
+
+  /* entering start */  
+  .page-enter {
+    opacity: 0;
+  }
+
+  /* entering end */
+  .page-enter-to {
+    opacity: 1;
+  }
+
+  /* leaving start */
+  .page-leave {
+    opacity: 1;
+  }
+
+  /* leaving end */
+  .page-leave-to {
+    opacity: 0;
+  }
 </style>
