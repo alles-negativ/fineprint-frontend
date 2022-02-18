@@ -9,6 +9,10 @@
     // height: 400px;
     pointer-events: none;
 
+    @include mobile {
+        margin-top: 40px;
+    }
+
     ::v-deep.flickity-viewport {
         height: calc(100vh - 4em - 142px);
 

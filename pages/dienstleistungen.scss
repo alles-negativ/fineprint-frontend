@@ -59,12 +59,12 @@
   }
 
   @include mobile {
-    position: relative;
+    position: absolute;
     width: 80%;
     bottom: unset;
     left: unset;
-    margin: 0 auto;
-    margin-bottom: -100px;
+    margin: 0 calc(10%);
+    // margin-bottom: -100px;
     padding: 20px;
   }
 }
