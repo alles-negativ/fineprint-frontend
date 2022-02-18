@@ -13,7 +13,11 @@
         height: calc(100vh - 4em - 142px);
 
         @include mobile {
-            height: 400px;
+            height: calc(100vw - 7em);
+        }
+
+        @include tablet {
+            height: calc(100vw - 7em);
         }
     }
 
@@ -23,7 +27,11 @@
         object-fit: cover;
 
         @include mobile {
-            max-height: 400px;
+            max-height: calc(100vw - 7em);
+        }
+
+        @include tablet {
+            max-height: calc(100vw - 7em);
         }
     }
 }

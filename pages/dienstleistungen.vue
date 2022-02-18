@@ -22,7 +22,7 @@ import metaTags from "../mixins/metaTags";
 export default {
   mixins: [metaTags],
 
-  layout: 'nofooter',
+  // layout: 'nofooter',
   
   async asyncData({ app, $kirby }) {
     const { json: page } = await $kirby.find({

@@ -1,6 +1,7 @@
 <template>
   <main>
       <Articles />
+      <Footer />
   </main>
 </template>
 

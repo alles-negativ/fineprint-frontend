@@ -1,6 +1,7 @@
 <template>
   <main id="content">
     <People />
+    <Footer />
   </main>
 </template>
 
@@ -18,3 +19,7 @@ export default {
   } 
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

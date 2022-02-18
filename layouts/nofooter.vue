@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CookieBox />
+    <!-- <CookieBox /> -->
     <Header />
     <div class="wrapper">
       <Nuxt />

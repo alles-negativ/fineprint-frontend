@@ -26,7 +26,8 @@ export default {
     data() {
         return {
             show: false,
-            animate: false
+            animate: false,
+            duration: 500
         }
     },
     methods: {
@@ -37,10 +38,12 @@ export default {
             el.style.height = '0';
         },
         enter: function(el) {
+            el.style['transition-duration'] = el.scrollHeight / this.duration + 's';
             el.style.height = el.scrollHeight + 'px';
         },
         beforeLeave: function(el) {
             el.style.height = el.scrollHeight + 'px';
+            el.style['transition-duration'] = el.scrollHeight / this.duration + 's';
         },
         leave: function(el) {
             el.style.height = '0';
