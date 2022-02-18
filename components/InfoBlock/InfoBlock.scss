@@ -35,13 +35,13 @@
     }
   }
 
-  @include mobile {
-    position: relative;
-    width: 80%;
-    bottom: unset;
-    left: unset;
-    margin: 0 auto;
-    margin-bottom: -100px;
-    padding: 20px;
-  }
+  // @include mobile {
+  //   position: relative;
+  //   width: 80%;
+  //   bottom: unset;
+  //   left: unset;
+  //   margin: 0 auto;
+  //   margin-bottom: -100px;
+  //   padding: 20px;
+  // }
 }
