@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer :class="{ 'home': $route.name === 'index' }">
     <div class="container">
       <div class="line"></div>
       <p class="title">Kontakt</p>

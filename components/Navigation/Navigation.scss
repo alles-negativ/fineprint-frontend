@@ -38,11 +38,16 @@ nav {
 @include mobile {
     .home {
         .logo {
-            height: 62px;
+            height: 51px;
             width: 0px;
     
             p {
                 line-height: 42px;
+                color: $black;
+
+                &:hover {
+                    color: $accent;
+                }
             }
         }
     }
