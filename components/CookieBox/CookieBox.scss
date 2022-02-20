@@ -128,9 +128,18 @@
 
 @keyframes pulse {
         0%, 100% {
-            transform: translate(0, 2px)
+            transform: translate(0, 1px)
         }
         50% {
-            transform: translate(0, -2px)
+            transform: translate(0, -1px)
         }
     }
+
+.cookie-consent-transition-leave-active, .cookie-consent-transition-enter-active {
+    transition: all 0.5s;
+}
+
+.cookie-consent-transition-leave-to, .cookie-consent-transition-enter {
+    height: 0;
+    padding-top: 0;
+}

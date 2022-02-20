@@ -14,6 +14,17 @@
     }
 }
 
+.cookie_spacer {
+    position: relative;
+    height: 0px;
+    transition: height 0.5s;
+
+    &.isActive {
+        height: 37px;
+        transition: unset;
+    }
+}
+
 .header__wrapper {
     position: fixed;
     width: 100%;
