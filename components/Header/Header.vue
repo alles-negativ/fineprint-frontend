@@ -1,15 +1,22 @@
 <template>
-  <div :class="{ 'home': $route.name === 'index' }" class="spacer">
-    <div class="header__wrapper">
-      <div class="line"></div>
-      <div class="header">
-        <Navigation />
-      </div>
+  <div class="header__margin">
+    <div class="line"></div>
+    <div :class="{ 'home': $route.name === 'index' }" class="spacer">
+      <vueHeadroom>
+        <header>
+          <div class="header__wrapper">
+            <div class="header">
+              <Navigation />
+            </div>
+          </div>
+        </header>
+      </vueHeadroom>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Header',
 }

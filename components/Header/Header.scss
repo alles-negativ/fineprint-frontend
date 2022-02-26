@@ -2,40 +2,47 @@
 @use "assets/css/main/breakpoints" as *;
 @use "assets/css/main/main" as *;
 
+.header__margin {
+    margin-bottom: 15px;
+}
+
 .spacer {
     height: 142px;
 
     @include mobile {
         height: 127px;
 
-        &.home {
-            height: 230px;
-        }
+        // &.home {
+        //     height: 230px;
+        // }
     }
 }
 
 .header__wrapper {
-    position: fixed;
     width: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,1) 100%);
+    // background: rgb(255,255,255);
+    // background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,1) 100%);
     
-    @include mobile {
-        background: rgb(255,255,255);
-        background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,1) 100%);
-    }
+    // @include mobile {
+    //     background: rgb(255,255,255);
+    //     background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,1) 100%);
+    // }
 }
 
 .line {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
     height: 7px;
     width: 100%;
-    background-color: $accent;
+    background-color: $accentFull;
 }
 
 .header {
     position: relative;
     height: auto;
     padding: 25px 40px 0 40px;
+    background-color: $white;
 
     @include mobile {
         padding: 10px 20px 0 20px;
@@ -165,8 +172,8 @@
     }
 }
 
-.home .header {
-    @include mobile {
-        padding: 10px 20px 0 30px;
-    }
-}
+// .home .header {
+//     @include mobile {
+//         padding: 10px 20px 0 30px;
+//     }
+// }

@@ -16,10 +16,6 @@ nav {
         padding: 0;
         overflow: hidden;
         margin-bottom: 15px;
-
-        @include mobile {
-            margin-top: 10px;
-        }
     }
 
     .item {
@@ -39,31 +35,20 @@ nav {
     }
 }
 
-@include mobile {
-    .home {
-        .logo {
-            position: absolute;
-            height: auto;
-            width: auto;
-            writing-mode: horizontal-tb;
-            transform: rotate(0deg);
-            top: 0;
-            right: 0;
-    
-            p {
-                line-height: 42px;
-            }
-        }
-    }
-}
-
 .logo { 
+    // transition: all 0.3s ease-in-out; // maybe some time ;-P
+
     position: relative;
-    height: 165px;
+    height: 172px;
     width: 28px;
 
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+
+    @include mobile {
+            height: 167px;
+            width: 28px;
+    }
     
     a {
         text-decoration: none;
@@ -88,10 +73,6 @@ p.text__menu {
     // height: 35px;
     width: auto;
     font-weight: normal;
-
-    @include mobile {
-        font-size: 18px;
-    }
 }
 
 nav li a {
