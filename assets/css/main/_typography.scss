@@ -37,6 +37,10 @@ h3 {
     font-style: normal;
     font-size: 30px;
 
+    @include mobileXS {
+        font-size: 25px;
+    }
+
     @include tablet {
             font-size: 35px;
     }
@@ -119,6 +123,10 @@ p, button {
         line-height: 25px;
         font-weight: 700;
         letter-spacing: 1px;
+
+        @include mobileXS {
+            font-size:calc(12px + 0.2vw);
+        }
 
         @include tablet {
             font-size:calc(13px + 0.2vw);
