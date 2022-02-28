@@ -12,6 +12,7 @@
         </header>
       </vueHeadroom>
     </div>
+    <div v-bind:class="{ 'isActive': this.cookie }" class="cookie_spacer"></div>
   </div>
 </template>
 
@@ -19,6 +20,18 @@
 
 export default {
   name: 'Header',
+
+  data() {
+    return {
+      cookie: false
+    }
+  },
+  methods: {
+    updateCookie(e) {
+      this.cookie = e;
+      console.log(e);
+    },
+  }
 }
 </script>
 

@@ -18,6 +18,17 @@
     }
 }
 
+.cookie_spacer {
+    position: relative;
+    height: 0px;
+    transition: height 0.5s;
+
+    &.isActive {
+        height: 37px;
+        transition: unset;
+    }
+}
+
 .header__wrapper {
     width: 100%;
     // background: rgb(255,255,255);

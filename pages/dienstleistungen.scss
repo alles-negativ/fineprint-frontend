@@ -35,12 +35,15 @@
   position: fixed;
   margin-left: calc(350px + 40px);
   width: calc(100% - 14em - 350px - 40px);
+  height: calc(100vh - 4em - 142px);
+  overflow: hidden;
 
   @include mobile {
     position: relative;
     margin-left: 0;
     width: calc(100%);
     margin: 40px 0;
+    height: calc(100vw - 7em);
   }
 }
 

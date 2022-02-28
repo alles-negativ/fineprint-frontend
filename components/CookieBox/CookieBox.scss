@@ -3,53 +3,54 @@
 @use "assets/css/main/main" as *;
 
 .cookie-consent {
-    position: fixed;
+    position: relative;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 45px;
+    height: 30px;
     background-color: $accent;
-    top: 5em;
-    left: 0;
-    right: 0;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 0.25em;
-    animation: pulse 1s ease-in infinite;
+    padding-top: 7px;
+    // top: 5em;
+    // left: 0;
+    // right: 0;
+    // margin-left: 1em;
+    // margin-right: 1em;
+    // padding: 0.25em;
+    // animation: pulse 1s ease-in infinite;
 
     @include tablet {
-        flex-flow: row wrap;
-        right: $contentpaddingLarge;
-        left: auto;
-        top: 5em;
-        width: 250px;
-        height: 75px;
-        padding: 0.5em;
-        margin-right: 0em;
+        // flex-flow: row wrap;
+        // right: $contentpaddingLarge;
+        // left: auto;
+        // top: 5em;
+        // width: 250px;
+        // height: 75px;
+        // padding: 0.5em;
+        // margin-right: 0em;
     }
 
     @include desktop {
-        flex-flow: row wrap;
-        right: $contentpaddingLarge;
-        left: auto;
-        top: 5em;
-        width: 300px;
-        height: 75px;
-        padding: 0.5em;
-        margin-right: 0em;
+        // flex-flow: row wrap;
+        // right: $contentpaddingLarge;
+        // left: auto;
+        // top: 5em;
+        // width: 300px;
+        // height: 75px;
+        // padding: 0.5em;
+        // margin-right: 0em;
     }
 
     @include desktopXL {
-        flex-flow: row wrap;
-        right: $contentpaddingLarge;
-        left: auto;
-        top: 5em;
-        width: 300px;
-        height: 75px;
-        padding: 0.5em;
-        margin-right: 0em;
+        // flex-flow: row wrap;
+        // right: $contentpaddingLarge;
+        // left: auto;
+        // top: 5em;
+        // width: 300px;
+        // height: 75px;
+        // padding: 0.5em;
+        // margin-right: 0em;
     }
 
     p {
@@ -59,20 +60,20 @@
         font-size: 12px;
 
         @include tablet {
-            width: 100%;
-            margin-right: 0em;
+            // width: 100%;
+            // margin-right: 0em;
             font-size: 14px;
         }
 
         @include desktop {
-            width: 100%;
-            margin-right: 0em;
+            // width: 100%;
+            // margin-right: 0em;
             font-size: 14px;
         }
 
         @include desktopXL {
-            width: 100%;
-            margin-right: 0em;
+            // width: 100%;
+            // margin-right: 0em;
             font-size: 14px;
         }
     }
@@ -84,10 +85,11 @@
         width: auto;
         border: thin solid $white;
         padding-top: 0.1em;
-        padding-bottom: 0.1em;
+        padding-bottom: 0em;
         padding-right: 0.5em;
         padding-left: 0.5em;
         cursor: pointer;
+        animation: pulse 1s ease-in infinite;
 
         @include tablet {
             margin-left: 1em;
@@ -126,9 +128,18 @@
 
 @keyframes pulse {
         0%, 100% {
-            transform: translate(0, 5px)
+            transform: translate(0, 1px)
         }
         50% {
-            transform: translate(0, 0)
+            transform: translate(0, -1px)
         }
     }
+
+.cookie-consent-transition-leave-active, .cookie-consent-transition-enter-active {
+    transition: all 0.5s;
+}
+
+.cookie-consent-transition-leave-to, .cookie-consent-transition-enter {
+    height: 0;
+    padding-top: 0;
+}
