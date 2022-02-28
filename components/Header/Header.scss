@@ -2,52 +2,50 @@
 @use "assets/css/main/breakpoints" as *;
 @use "assets/css/main/main" as *;
 
-.spacer {
-    height: 142px;
+.header__margin {
+    margin-bottom: 40px;
 
     @include mobile {
-        height: 127px;
-
-        &.home {
-            height: 230px;
-        }
+        margin-bottom: 25px;
     }
 }
 
-.cookie_spacer {
-    position: relative;
-    height: 0px;
-    transition: height 0.5s;
+// .cookie_spacer {
+//     position: relative;
+//     height: 0px;
+//     transition: height 0.5s;
 
-    &.isActive {
-        height: 37px;
-        transition: unset;
-    }
-}
+//     &.isActive {
+//         height: 37px;
+//         transition: unset;
+//     }
+// }
 
 .header__wrapper {
-    position: fixed;
     width: 100%;
-    z-index: 999;
-
-    background: $white;
-    // background: rgba(255,255,255,0.5);
-    // backdrop-filter: blur(10px);
     // background: rgb(255,255,255);
     // background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 30%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,1) 100%);
     
+    // @include mobile {
+    //     background: rgb(255,255,255);
+    //     background: linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,1) 100%);
+    // }
 }
 
 .line {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
     height: 7px;
     width: 100%;
-    background-color: $accent;
+    background-color: $accentFull;
 }
 
 .header {
     position: relative;
     height: auto;
-    padding: 25px 40px 0 40px;
+    padding: 20px 40px 0 40px;
+    background-color: $white;
 
     @include mobile {
         padding: 10px 20px 0 20px;
@@ -177,8 +175,16 @@
     }
 }
 
-.home .header {
-    @include mobile {
-        padding: 10px 20px 0 60px;
+.headroom {
+    &--not-top{
+        .header {
+           transition: 0.3s; 
+        }
     }
 }
+
+// .home .header {
+//     @include mobile {
+//         padding: 10px 20px 0 30px;
+//     }
+// }

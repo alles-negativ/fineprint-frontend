@@ -12,13 +12,9 @@
         margin-bottom: -5%;
 
         .content {
-
+            width: 100%;
+            margin-bottom: 5%;
             position: relative;
-
-            @include mobile {
-                width: 100%;
-                margin-bottom: 5%;
-            }
 
             @include tablet {
                 width: 47.5%;
@@ -62,6 +58,10 @@
                 width: 100%;
                 color: $white;
                 padding: 30px;
+
+                @include mobileXS {
+                    padding: 20px;
+                }
             }
 
         }

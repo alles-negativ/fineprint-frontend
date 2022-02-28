@@ -1,10 +1,12 @@
 <template>
     <div class="gallery_wrapper">
-        <Flickity ref="flickity" :options="flickityOptions">
-            <div v-for="element in data.images" :key="element.id">
-                <nuxt-img class="image" :src="element.url" :alt="element.alt" />
-            </div>
-        </Flickity>
+        <no-ssr>
+            <Flickity ref="flickity" :options="flickityOptions">
+                <div v-for="element in data.images" :key="element.id">
+                    <nuxt-img class="image" :src="element.url" :alt="element.alt" />
+                </div>
+            </Flickity>
+        </no-ssr>
     </div>
 </template>
 

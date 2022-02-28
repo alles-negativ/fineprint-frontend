@@ -7,8 +7,12 @@ nav {
 
 .nav {
     width: auto;
-    height: 110px;
+    height: 95px;
     padding: 0px;
+
+    @include mobile {
+        height: 55px;
+    }
 
     ul {
         list-style-type: none;
@@ -16,6 +20,15 @@ nav {
         padding: 0;
         overflow: hidden;
         margin-bottom: 15px;
+
+        @include mobile {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding-top: 10px;
+            padding-left: 6px;
+            margin-bottom: 5px;
+        }
     }
 
     .item {
@@ -24,6 +37,14 @@ nav {
         width: auto;
         color: $black;
         margin-bottom: 0px;
+
+        @include mobile {
+            margin-right: 12px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
 
         a {
             &:hover {
@@ -35,20 +56,10 @@ nav {
     }
 }
 
-@include mobile {
-    .home {
+.headroom {
+    &--unpinned {
         .logo {
-            height: 51px;
-            width: 0px;
-    
-            p {
-                line-height: 42px;
-                color: $black;
-
-                &:hover {
-                    color: $accent;
-                }
-            }
+            transition: 0.3s;
         }
     }
 }
@@ -57,11 +68,16 @@ nav {
     // transition: all 0.3s ease-in-out; // maybe some time ;-P
 
     position: relative;
-    height: 153px;
+    height: 172px;
     width: 28px;
 
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+
+    @include mobile {
+            height: 183px;
+            width: 36px;
+    }
     
     a {
         text-decoration: none;

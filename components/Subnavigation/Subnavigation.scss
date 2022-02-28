@@ -7,8 +7,11 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    .elements {
+    @include mobile {
+        margin-top: 7px;
+    }
 
+    .elements {
         margin-right: 15px;
 
         &:last-child {

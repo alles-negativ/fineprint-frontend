@@ -67,8 +67,8 @@ export default {
   plugins: [
     '~plugins/nuxt-kirby-kql',
     '~/plugins/preview.client.js',
+    '~/plugins/headroom.js',
     { src: '~/plugins/VueFlickity.js', ssr: false }
-
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
