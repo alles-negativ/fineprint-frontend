@@ -3,31 +3,23 @@
 @use "assets/css/main/main" as *;
 
 .header__margin {
-    margin-bottom: 15px;
-}
-
-.spacer {
-    height: 142px;
+    margin-bottom: 40px;
 
     @include mobile {
-        height: 127px;
-
-        // &.home {
-        //     height: 230px;
-        // }
+        margin-bottom: 25px;
     }
 }
 
-.cookie_spacer {
-    position: relative;
-    height: 0px;
-    transition: height 0.5s;
+// .cookie_spacer {
+//     position: relative;
+//     height: 0px;
+//     transition: height 0.5s;
 
-    &.isActive {
-        height: 37px;
-        transition: unset;
-    }
-}
+//     &.isActive {
+//         height: 37px;
+//         transition: unset;
+//     }
+// }
 
 .header__wrapper {
     width: 100%;
@@ -52,7 +44,7 @@
 .header {
     position: relative;
     height: auto;
-    padding: 25px 40px 0 40px;
+    padding: 20px 40px 0 40px;
     background-color: $white;
 
     @include mobile {
@@ -179,6 +171,14 @@
                 margin-top: 0em;
                 margin-bottom: 0px;
             }
+        }
+    }
+}
+
+.headroom {
+    &--not-top{
+        .header {
+           transition: 0.3s; 
         }
     }
 }

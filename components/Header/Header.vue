@@ -1,7 +1,6 @@
 <template>
   <div class="header__margin">
     <div class="line"></div>
-    <div :class="{ 'home': $route.name === 'index' }" class="spacer">
       <vueHeadroom>
         <header>
           <div class="header__wrapper">
@@ -11,8 +10,6 @@
           </div>
         </header>
       </vueHeadroom>
-    </div>
-    <div v-bind:class="{ 'isActive': this.cookie }" class="cookie_spacer"></div>
   </div>
 </template>
 
@@ -20,18 +17,6 @@
 
 export default {
   name: 'Header',
-
-  data() {
-    return {
-      cookie: false
-    }
-  },
-  methods: {
-    updateCookie(e) {
-      this.cookie = e;
-      console.log(e);
-    },
-  }
 }
 </script>
 
