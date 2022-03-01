@@ -8,7 +8,6 @@
 import metaTags from "../mixins/metaTags";
 
 export default {
-  // layout: 'nofooter',
 
   mixins: [metaTags],
   
