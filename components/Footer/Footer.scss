@@ -10,11 +10,7 @@ footer {
     padding: 0;
 
     &.home {
-      left: 0;
-      position: absolute;
-      margin: 0 25px;
-      margin-top: 60px;
-      width: calc(100vw - 50px);
+      margin-left: -7px;
 
       .contact {
         margin-bottom: 100px;

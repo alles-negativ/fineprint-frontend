@@ -5,6 +5,5 @@
     <div class="wrapper">
       <Nuxt />
     </div>
-    <!-- <Footer /> -->
   </div>
 </template>
