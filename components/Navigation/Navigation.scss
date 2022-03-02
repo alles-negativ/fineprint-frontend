@@ -106,7 +106,8 @@ nav li a {
 nav li {
         a.nuxt-link-exact-active  {
             p {
-                font-weight: bold;
+                // font-weight: bold;
+                color: $accentFull;
                 @include mobile {
                     font-weight: 400;
                     color: $accentFull;
@@ -116,7 +117,8 @@ nav li {
 
         a.nuxt-link-active  {
             p {
-                font-weight: bold;
+                // font-weight: bold;
+                color: $accentFull;
                 @include mobile {
                     font-weight: 400;
                     color: $accentFull;
