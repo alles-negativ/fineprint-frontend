@@ -103,13 +103,13 @@
 
         background-image: url('~assets/images/info_icon.svg');
         background-repeat: no-repeat;
-        padding-left: 30px;  /* width of the image plus a little extra padding */
-        // display: block;  /* may not need this, but I've found I do */
+        padding-left: 30px;
 
         @include mobile {
-            width: calc(100vw - 30px);
+            width: calc(100vw - 110px);
             align-items: unset;
             top: 425px;
+            margin-left: 30px;
         }
 
         &::v-deep p {
