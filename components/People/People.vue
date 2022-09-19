@@ -1,6 +1,5 @@
 <template>
     <div class="container"> 
-        <!-- <ul v-for="columns in sortedArticles" :key="columns.id" class="container__columns"> -->
         <ul class="container__columns">
             <li v-for="article in articles" :key="article.id" class="content">
                 <div class="sticky">

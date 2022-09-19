@@ -103,13 +103,16 @@
 
         background-image: url('~assets/images/info_icon.svg');
         background-repeat: no-repeat;
-        padding-left: 30px;  /* width of the image plus a little extra padding */
-        // display: block;  /* may not need this, but I've found I do */
+        padding-left: 30px;
 
         @include mobile {
-            width: calc(100vw - 30px);
+            width: calc(100vw - 100px);
             align-items: unset;
             top: 425px;
+            margin-left: 30px;
+            background-image: none;
+            background-repeat: no-repeat;
+            padding-left: 0px;
         }
 
         &::v-deep p {
@@ -134,15 +137,12 @@
     color: $white;
 
     @include mobile {
-        right: unset;
+        right: 30px;
         padding: 30px;
-        width: calc(100vw - 50px);
+        width: calc(100vw - 100px);
+        z-index: 998;
     }
 }
-
-// p {
-//     margin-bottom: 1.5em;
-// }
 
 h3 {
     margin-top: 0.5em;
@@ -156,7 +156,8 @@ img {
 
     @include mobile {
         width: 100%;
-        padding-top: 100px;
+        padding-top: 160px;
         height: 420px;
+        z-index: 998;
     }
 }

@@ -32,15 +32,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h3 {
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-.container {
-
-    .textfield {
-        margin-top: 40px;
-        line-height: 26px;
-    }
-}
+    @use "dlslug";
 </style>

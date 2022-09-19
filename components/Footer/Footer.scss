@@ -10,11 +10,7 @@ footer {
     padding: 0;
 
     &.home {
-      left: 0;
-      position: absolute;
-      margin: 0 25px;
-      margin-top: 60px;
-      width: calc(100vw - 50px);
+      margin-left: -7px;
 
       .contact {
         margin-bottom: 100px;
@@ -46,6 +42,12 @@ a {
   font-size: 14px;
   line-height: 20px;
   margin-top: 5px;
+
+  @include mobile {
+    top: 3px;
+    left: 0;
+    right: unset;
+  }
 }
 
 .container {
@@ -100,6 +102,10 @@ a {
   height: auto;
   flex-flow: column wrap;
   flex-direction: column;
+
+  @include mobile {
+    margin-top: 10px;
+  }
 
   p {
     font-size: 22px;

@@ -3,14 +3,22 @@ Z-Index of items
 Helps us keep in view who is in front and how far
 */
 
-.nav {
-    z-index: 999;
+.cookie-consent {
+    z-index: 10001;
 }
 
-.cookie-consent {
-    z-index: 999;
+.line {
+    z-index: 10003;
+}
+
+.nav {
+    z-index: 10002;
 }
 
 .header__wrapper {
     z-index: 998;
+}
+
+.info {
+    z-index: 100;
 }

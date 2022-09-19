@@ -1,6 +1,6 @@
 <template>
   <VueIfBot>
-    <cookie-consent v-on="$listeners">
+    <cookie-consent>
       <template slot="message">
         <p>Diese Website verwendet Cookies</p>
         <a class="btn btn-link" href="/my-cookies">
