@@ -1,6 +1,11 @@
 <template>
     <div class="subnavigation"> 
         <ul class="container">
+            <li class="elements">
+                <nuxt-link :to="'/dienstleistungen'">
+                        <p class="text">Übersicht</p>
+                </nuxt-link>
+            </li>
             <li v-for="element in data" :key="element.id" class="elements">
                 <nuxt-link :to="'/dienstleistungen/' + element.slug">
                         <p class="text">{{ element.title }}</p>
