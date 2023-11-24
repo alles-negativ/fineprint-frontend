@@ -4,6 +4,7 @@
 
 .gallery_wrapper {
     pointer-events: none;
+    height: 100%;
 
     @include mobile {
         margin-top: 40px;
@@ -19,6 +20,10 @@
         @include tablet {
             height: calc(100vw - 7em);
         }
+    }
+
+    .flickity-enabled {
+        height: 100%;
     }
 
     .image {
